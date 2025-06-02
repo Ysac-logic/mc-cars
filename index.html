@@ -9,12 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Moura Cars</title>
+    <link rel="icon" type="image/png" href="src/images/carsgroup.png">
+
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-car" id="nav_logo"> Moura Cars</i>
-
+            <div id="nav_logo">
+                <img src="src/images/carsgroup.png" alt="">
+            </div>
             <ul id="nav_list">
                 <li class="nav-item active">
                     <a href="#home">Página inicial</a>
@@ -56,48 +59,30 @@
     </header>
 
     <main id="content">
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="src/Movies/framecars.mp4" type="video/mp4" />
+        </video>
+    </div>
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
                 <h1 class="title">
-                    2025 com o pé na
-                    <span>estrada</span>
+                    2025 Com o Pé Na
+                    <span>Estrada</span>
                 </h1>
 
                 <p class="description">
-                    Entre em contato para receber as melhores ofertas de carro de 2025!
+                    Há mais de <strong>10 </strong>anos como referência no mercado.
                 </p>
-
-                <div id="cta_buttons">
-                    <a href="#" class="btn-default">
-                        Ver Modelos 2025
-                    </a>
-
-                    <a href="tel:+55555555555" id="phone_button">
-                        <button class="btn-default">
-                            <i class="fa-solid fa-phone"></i>
-                        </button>
-                        (75) 9989-33227
-                    </a>
-                </div>
-
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
             </div>
-
-            <div id="banner">
-                <img src="src/images/carsgroup.png" alt="">
+            <div id="banner-video">
+                <video autoplay muted loop playsinline>
+                    <source src="src/Movies/frame2.mp4" type="video/mp4"/>
+                    
+                     Seu navegador não suporta vídeo em HTML5.
+                 </video>
             </div>
         </section>
 
@@ -107,14 +92,14 @@
 
             <div id="dishes">
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
                     </div>
 
                     <img src="src/images/dish.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Accord Hybrid 2024
+                        Accord Hybrid 2025
                     </h3>
 
                     <span class="dish-description">
@@ -139,14 +124,14 @@
                 </div>
 
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
                     </div>
 
                     <img src="src/images/dish2.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Compass Sport T270 2024
+                        Compass Sport T270 
                     </h3>
 
                     <span class="dish-description">
@@ -171,8 +156,8 @@
                 </div>
 
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
                     </div>
 
                     <img src="src/images/dish3.png" class="dish-image" alt="">
@@ -203,8 +188,8 @@
                 </div>
 
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
                     </div>
 
                     <img src="src/images/dish4.png" class="dish-image" alt="">
@@ -234,6 +219,148 @@
                     </div>
                 </div>
             </div>
+
+            <h3 class="section-subtitle">Motos Esportivas</h3>
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                 <source src="src/Movies/Comercialmoto.mp4" type="video/mp4">
+                     Seu navegador não suporta vídeo em HTML5.
+                 </video>
+            </div>
+
+             <div id="dishes">
+                <div class="dish">
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/images/motoA.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        XY 250
+                    </h3>
+
+                    <span class="dish-description">
+                        Shineray
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 21.514,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/images/motoB.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        YZF-R3
+                    </h3>
+
+                    <span class="dish-description">
+                        Yamaha
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 36.990,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/images/motoP.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Ninja 500
+                    </h3>
+
+                    <span class="dish-description">
+                        Kawasaki
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 43.190,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/images/motoR.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        CBR 500R
+                    </h3>
+
+                    <span class="dish-description">
+                        Honda
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 39.100,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
 
         <section id="testimonials">
@@ -243,7 +370,7 @@
                 <h2 class="section-title">
                     Depoimentos
                 </h2>
-                <h3 class="section-subtitle">
+                <h3 class="section-subtitle-t">
                     O que os clientes falam sobre nós
                 </h3>
 
@@ -283,7 +410,7 @@
                                 </span>
                             </p>
                             <p>
-                                Comprarei sempre aqui, atendente muito gostosa
+                                Atendimento Sensacional!
                             </p>
                         </div>
                     </div>
@@ -294,10 +421,15 @@
                 </button>
             </div>
         </section>
+
+        <section id="#contacts">
+
+
+        </section>
     </main>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
+        <img class="imgsvg" src="src/images/wave.svg" alt="">
 
         <div id="footer_items">
             <span id="copyright">
@@ -309,7 +441,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
-                <a href="">
+                <a href="https://www.instagram.com/euysacc/">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 

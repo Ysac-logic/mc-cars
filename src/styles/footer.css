@@ -5,12 +5,12 @@ footer {
 #footer_items {
     display: flex;
     justify-content: space-between;
-    padding: 0px 8% 24px 8%;
+    padding: 20px 8% 24px 8%;
     align-items: center;
 }
 
 #copyright {
-    color: var(--color-neutral-1);;
+    color: white;;
     font-weight: 500;
 }
 
@@ -19,4 +19,10 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+.imgsvg{ 
+  width: 100%;
+  height: auto;
+  display: block;
 }

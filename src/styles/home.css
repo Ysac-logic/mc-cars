@@ -2,10 +2,12 @@
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 #cta {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -14,7 +16,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-neutral-1);;
+    color: white;
 }
 
 #cta .title span {
@@ -23,6 +25,7 @@
 
 #cta .description {
     font-size: 1.2rem;
+    color: white;
 }
 
 #cta_buttons {
@@ -48,31 +51,26 @@
 
 #phone_button button {
     box-shadow: none;
+    color: rgb(255, 255, 255);
 }
 
-#banner {
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-    z-index: 2;
+#banner-video {
+  position: relative;  
+  width: 50%; 
+  margin-left: 10%;      
 }
 
-#banner img {
-    height: 100%;
-    width: fit-content;
+#banner-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+ object-fit: cover;
+ padding: 16px;
 }
 
-.shape {
-    background-color: var(--color-primary-2);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    border-radius: 40% 30% 0% 20%;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
+
+
+
 
 @media screen and (max-width: 1170px) {
     #home {
@@ -95,6 +93,12 @@
 
 @media screen and (max-width: 450px) {
     #phone_button button {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #banner-video {
         display: none;
     }
 }
