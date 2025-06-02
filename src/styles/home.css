@@ -7,9 +7,11 @@
 }
 
 #cta {
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 28px;
     margin-top: 5%;
 }
@@ -20,7 +22,7 @@
 }
 
 #cta .title span {
-    color: var(--color-primary-6);
+    color: red;
 }
 
 #cta .description {
@@ -54,19 +56,6 @@
     color: rgb(255, 255, 255);
 }
 
-#banner-video {
-  position: relative;  
-  width: 50%; 
-  margin-left: 10%;      
-}
-
-#banner-video video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
- object-fit: cover;
- padding: 16px;
-}
 
 .video-background_mobile{
     display: none;
@@ -128,10 +117,16 @@
     }
 
     #cta {
+        margin-top: 30px;
         width: 100%;
         text-align: center;
         align-items: center;
     }
+
+    #cta .title {
+    font-size: 2rem;
+    color: white;
+}
 }
 
 @media screen and (max-width: 450px) {
