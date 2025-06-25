@@ -1,0 +1,167 @@
+#catalog {
+    margin-top: 6%;
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    align-items: center;
+    justify-content: center;    
+}
+
+.video-background {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.video-background video {
+  object-fit: cover;
+  opacity: 0.4;
+} 
+
+#main-list{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px; /* reduzido para parecer mais card */
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /* sombra elegante */
+}
+
+
+.active{
+   transform: translate(-50%, -50%) translateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+.product-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-img img{
+    width: 40%;
+  height: auto;
+
+}
+
+.content-product{
+   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: static; /* remove position absolute/top/right */
+
+}
+
+.product-tag{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+.product-name{
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.product-desc{
+    font-size: 0.9rem;
+    color: rgb(106, 106, 106);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.product-btn{
+    width: 30%;
+    padding: 12px 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+
+     
+}
+
+.product-btn button{
+    border: none;
+    background: none;
+}
+
+.product-btn:hover{
+    background-color: rgb(220, 220, 220);
+    text-decoration: none;
+
+}
+
+#arrows{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.arrow-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(163, 163, 163);
+    border: none;
+    cursor: pointer;
+
+}
+
+.arrow-btn:hover{
+    background-color: rgb(210, 210, 210);
+
+}
+
+
+
+
+
+
+

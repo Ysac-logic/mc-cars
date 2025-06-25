@@ -1,0 +1,52 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    z-index: 10;
+    background-color: black;
+    
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    width: 50px;
+
+}
+.nav-item{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    gap: 48px;
+
+}
+
+header nav ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+header nav ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    transition: width 0.5s ease;
+
+}
+
+header nav ul li:hover::after{
+    width: 100%;
+
+}

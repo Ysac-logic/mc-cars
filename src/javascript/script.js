@@ -37,7 +37,7 @@ $(document).ready(function () {
         let activeSectionIndex = 0;
 
         $sections.each(function (i) {
-            const sectionTop = $(this).offset().top - 96;
+            const sectionTop = $(this).offset().top - 200;
             const sectionBottom = sectionTop + $(this).outerHeight();
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Consórcio</title>
+    <link rel="stylesheet" href="srcx/styles/style.css" />
+    <link rel="icon" type="image/png" href="src/images/carsgroup.png">
+
+      
+    
+    
+  </head>
+  <body>
+    
+    
+    <header>
+      <div class="logo">
+        <img src="src/images/carsgrouplogo.png" alt="">
+      </div>
+      <nav id="navbar">
+        <ul>
+          <a href="index.html" class="nav-item">
+            <li >Home</li>
+          </a>
+          <a href="#carousel-section" class="nav-item">
+            <li>Produtos</li>
+          </a>
+          <a href="./Login/index.html" class="nav-item">
+            <li>Entrar</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="video-background">
+    <video autoplay muted loop playsinline>
+        <source src="src/Movies/Comercialmoto.mp4" type="video/mp4" />
+    </video>
+    </div>
+
+        <section id="catalog">
+
+            <div id="main-list">
+                <div class="item active">
+                    <div class="product-img">
+                        <img src="srcx/img/m1.png" alt="" />
+                    </div>
+                    <div class="content-product">
+                        <p class="product-tag">Shineray</p>
+                        <p class="product-name">XY 250</p>
+                        <p class="product-desc">Minha descrição</p>
+                        <button class="product-btn btnPlanos">Dar lance</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="product-img">
+                        <img src="srcx/img/moto2.png" />
+                    </div>
+                    <div class="content-product">
+                        <p class="product-tag">Yamaha</p>
+                        <p class="product-name">YZF-R3</p>
+                        <p class="product-desc">Minha descrição</p>
+                        <button class="product-btn btnPlanos">Dar lance</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="product-img">
+                        <img src="srcx/img/moto3.png" alt="" />
+                    </div>
+                    <div class="content-product">
+                        <p class="product-tag">Kawasaki</p>
+                        <p class="product-name">Ninja 500</p>
+                        <p class="product-desc">Minha descrição</p>
+                        <button class="product-btn btnPlanos">Dar lance</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modalOverlay">
+      <div id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="modalClose" aria-label="Fechar formulário">×</button>
+        <h2 id="modalTitle">Seleção simplificada</h2>
+        <form id="formConsorcio" novalidate>
+          <div>
+
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input
+            type="text"
+            id="cpf"
+              name="cpf"
+              required
+              maxlength="11"
+              placeholder="Somente números"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" name="nascimento" required />
+          </div>
+
+          <div class="form-group">
+            <label for="number">Valor do lance</label>
+            <input type="number" id="lance" name="lance" required />
+          </div>
+          
+          <button type="submit">Enviar</button>
+        </div>
+          
+          <div id="erroMensagem" class="erro"></div>
+        </form>
+        <div id="mensagemFinal" class="mensagem-final"></div>
+      </div>
+    </div>
+
+            
+            
+            <div id="arrows">
+                <button class="arrow-btn" id="esquerda">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg>
+            </button>
+            
+            <button class="arrow-btn" id="direita">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg>
+        </button>
+    </div>
+        </section>
+        <section id="carousel-section">
+          <div class="carousel-header">
+            <h2>As novidades. <span>Veja o que acabou de chegar.</span></h2>
+          </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="card">
+        <h3>Picapes</h3>
+        <p class="tag">Até 80x!</p>
+        <p>A partir de R$ 123.999</p>
+        <img src="srcx/img/carroconsorcio.png" alt="MacBook Air">
+      </div>
+      <div class="card dark">
+        <h3>Eletricos</h3>
+        <p class="tag">Até 80x!</p>
+        <p>A partir de R$ 10.499</p>
+        <img src="srcx/img/eletricos.png" alt="iPhone 16 Pro">
+      </div>
+      <div class="card">
+        <h3>SUV</h3>
+        <p class="tag">Até 60x!</p>
+        <p>A partir de R$ 7.499</p>
+        <img src="srcx/img/suv.png" alt="iPad Air">
+      </div>
+      <div class="card dark">
+        <h3>Esportivos</h3>
+        <p class="tag">Apple Intelligence</p>
+        <p>A partir de R$ 12.999</p>
+        <img src="srcx/img/esportivo.png" alt="MacBook Air">
+      </div>
+      <div class="card">
+        <h3>Consórcio para</h3>
+        <p class="tag">Empresas</p>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+  <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+  <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Informations">
+
+  <div class="info-container">
+    <div class="info-image">
+      <img src="srcx/img/atizap.jpg" alt="">
+    </div>
+    <div class="info-content">
+      <div class="info-h2">
+        <h2>Seguro e <strong> Descomplicado </strong> </h2>
+      </div>
+      <div class="info-text">  
+        <p>Na Moura Cars, você encontra um processo de compra simples, rápido e transparente.
+Com milhares de veículos vendidos, somos referência em confiança, qualidade e segurança.
+Escolha seu carro com tranquilidade, sabendo que está comprando com quem entende do assunto e se preocupa com a sua satisfação.
+<br>
+<strong class="str"> 
+  Moura Cars mais que um carro, uma conquista com segurança.
+</strong> 
+
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script src="srcx/scriptact.js"></script>
+</body>
+</html>

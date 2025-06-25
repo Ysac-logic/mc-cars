@@ -1,0 +1,147 @@
+/* Modal backdrop */
+#modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+#modalContent {
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 420px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-height: 90%;
+}
+
+/* Close button */
+#modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+#modalClose:hover {
+  color: #007bff;
+}
+
+#formConsorcio{
+  height: 50%;
+  display: flex;
+  top: 5%;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Form styles */
+#modalContent h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f66d6d;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+/* Mensagens */
+.mensagem-final {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+  margin-top: 2rem;
+  text-align: center;
+  min-height: 80px;
+}
+
+.mensagem-final.verde {
+  color: green;
+}
+
+.mensagem-final.vermelho {
+  color: red;
+}
+
+
+
+.erro {
+  display: flex;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+/* Animação dos três pontinhos */
+.pontos::after {
+  content: '';
+  display: inline-block;
+  animation: pontosAnim 1s steps(3, end) infinite;
+  width: 1ch;
+  text-align: left;
+  overflow: hidden;
+}
+
+@keyframes pontosAnim {
+  0% { content: ''; }
+  33% { content: '.'; }
+  66% { content: '..'; }
+  100% { content: '...'; }
+}
