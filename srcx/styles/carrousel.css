@@ -81,4 +81,15 @@
   color: rgb(255, 0, 0);
   font-size: 50%;
 }
+.linkcontainer{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.linkcontainer-dark{
+  text-decoration: none;
+  color: white;
+
+}
 
