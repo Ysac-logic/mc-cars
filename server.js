@@ -20,21 +20,22 @@ app.use(session({
 }));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'login.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/login', (req, res) => {
   const { usuario, senha } = req.body;
 
   if (usuarios[usuario] && usuarios[usuario] === senha) {
-    req.session.usuario = usuario;
-    return res.json({ sucesso: true });
-  }
+  req.session.usuario = usuario;
+  return res.redirect('/home.html');
+}
+
 
   res.json({ sucesso: false, mensagem: 'Usuário ou senha incorretos' });
 });
 
-app.get('/action.html', (req, res) => {
+app.get('/login', (req, res) => {
   if (!req.session.usuario) {
     return res.redirect('/');
   }

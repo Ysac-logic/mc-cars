@@ -3,6 +3,7 @@
 @import url('carrousel.css');
 @import url('modal.css');
 @import url('info.css');
+@import url('email.css');
 
 
 
@@ -36,3 +37,7 @@ body{
     min-height: calc(100vh - 91px);
     background-color: rgb(0, 0, 0);
 }
+
+
+
+
